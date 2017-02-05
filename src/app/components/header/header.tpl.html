@@ -1,3 +1,7 @@
 <header class="layout-row md-padding full-width">
-    <div class="md-display-1 color-orange">Human Rights Realization Community</div>
+    <div class="color-orange"
+    ng-class="{
+        'md-headline': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'),
+        'md-display-1': $ctrl.$mdMedia('gt-sm'),
+    }">Human Rights Realization Community</div>
 </header>

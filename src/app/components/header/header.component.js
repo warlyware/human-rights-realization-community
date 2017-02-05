@@ -2,10 +2,10 @@
     'use strict';
 
     angular
-        .module('hrrc-app')
+        .module('hrrc-app.components')
         .component('hrrcHeader', {
             templateUrl: 'components/header/header.tpl.html',
-            controller: function() {console.log('header go'); }
+            controller: 'HeaderController'
         });
 
 })();

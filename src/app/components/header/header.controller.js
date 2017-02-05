@@ -5,7 +5,13 @@
         .module('hrrc-app.components')
         .controller('HeaderController', HeaderController);
 
-        function HeaderController() {
-            console.log('HeaderController go');
+        HeaderController.$inject = ['$mdMedia', '$state'];
+
+        function HeaderController($mdMedia, $state) {
+            var vm = {};
+
+            vm.$mdMedia = $mdMedia;
+
+            return vm;
         }
 })();

@@ -3,5 +3,6 @@ angular
         'ui.router',
         'ngMaterial',
         'hrrc-app.routes',
+        'hrrc-app.components',
         'hrrc-app.home'
     ]);
