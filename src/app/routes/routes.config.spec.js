@@ -1,6 +1,6 @@
 ngDescribe({
     name: 'Routes',
-    modules: ['seed-app.routes', 'ui.router'],
+    modules: ['hrrc-app.routes', 'ui.router'],
     inject: ['$state'],
     tests: function (deps) {
         it('should pass', function() {

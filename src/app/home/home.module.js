@@ -1,2 +1,2 @@
 angular
-    .module('seed-app.home', []);
+    .module('hrrc-app.home', []);

@@ -1,7 +1,7 @@
 (function() {
 
 angular
-    .module('seed-app')
+    .module('hrrc-app')
     .config(config);
 
     function config() {

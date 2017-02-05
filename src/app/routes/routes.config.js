@@ -1,5 +1,5 @@
 angular
-    .module('seed-app.routes')
+    .module('hrrc-app.routes')
     .config(config);
 
     function config($stateProvider) {

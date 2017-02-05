@@ -1,7 +1,7 @@
 angular
-    .module('seed-app', [
+    .module('hrrc-app', [
         'ui.router',
         'ngMaterial',
-        'seed-app.routes',
-        'seed-app.home'
+        'hrrc-app.routes',
+        'hrrc-app.home'
     ]);
