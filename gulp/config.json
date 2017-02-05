@@ -8,14 +8,12 @@
             ],
             "js": [
                 "./src/app/*.js",
-                "./src/app/**/*.js",
-                "./src/app/**/**/*.js"
+                "./src/app/**/*.js"
             ],
             "styles": [
                 "./src/**/base.scss",
                 "./src/**/colors.scss",
-                "./src/**/**/*.scss",
-                "./src/**/**/**/*.scss"
+                "./src/**/**/*.scss"
             ],
             "styles_imports": "./src/styles"
         },

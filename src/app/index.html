@@ -9,6 +9,7 @@
     </head>
 
     <body ng-controller="ApplicationController as appCtrl">
+        <hrrc-header></hrrc-header>
         <ui-view></ui-view>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -21,6 +22,8 @@
         <script src="application.module.js"></script>
         <script src="application.config.js"></script>
         <script src="application.controller.js"></script>
+        <script src="components/components.module.js"></script>
+        <script src="components/header/header.component.js"></script>
         <script src="routes/routes.module.js"></script>
         <script src="routes/routes.config.js"></script>
         <script src="home/home.module.js"></script>
