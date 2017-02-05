@@ -5,12 +5,12 @@
         .module('hrrc-app.components')
         .controller('HeaderController', HeaderController);
 
-        HeaderController.$inject = ['$mdMedia', '$state'];
+        HeaderController.$inject = [];
 
-        function HeaderController($mdMedia, $state) {
+        function HeaderController() {
             var vm = {};
 
-            vm.$mdMedia = $mdMedia;
+            function getHeaderHeight() {}
 
             return vm;
         }

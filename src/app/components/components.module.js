@@ -2,5 +2,7 @@
     'use strict';
 
     angular
-        .module('hrrc-app.components', []);
+        .module('hrrc-app.components', [
+
+        ]);
 })();
