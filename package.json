@@ -1,0 +1,29 @@
+{
+  "name": "human-rights-realization-community",
+  "version": "0.0.2",
+  "description": "Website for the Human Rights Realization Community",
+  "main": "application.module.js",
+  "devDependencies": {
+    "angular-mocks": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^2.3.2",
+    "karma": "^1.4.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "ng-describe": "^1.8.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "start": "cd build && lite-server",
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-aria": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-ui-router": "^0.4.2"
+  }
+}

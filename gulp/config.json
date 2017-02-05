@@ -1,0 +1,27 @@
+{
+    "paths": {
+        "src": {
+            "html": [
+                "./src/app/*.html",
+                "./src/app/**/*.html",
+                "./src/app/**/**/*.html"
+            ],
+            "js": [
+                "./src/app/*.js",
+                "./src/app/**/*.js",
+                "./src/app/**/**/*.js"
+            ],
+            "styles": [
+                "./src/**/base.scss",
+                "./src/**/colors.scss",
+                "./src/**/**/*.scss",
+                "./src/**/**/**/*.scss"
+            ],
+            "styles_imports": "./src/styles"
+        },
+        "node_modules": [
+            "./node_modules/**/*.js",
+            "./node_modules/**/*.css"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'colors';
+@import 'position';
+@import 'padding-margin';
+
+body {
+    background-color: $light-gray;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
