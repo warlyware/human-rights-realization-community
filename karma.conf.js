@@ -16,6 +16,7 @@ module.exports = function(config) {
         'src/app/application.run.js',
         'src/**/*.module.js',
         'src/**/*.config.js',
+        '/src/app/components/header.*.js',
         'src/**/*.*.js',
     ],
 
