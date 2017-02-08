@@ -6,6 +6,7 @@ angular
         $stateProvider.state('home', {
             url: '/',
             templateUrl: '/home/home.tpl.html',
-            controller: 'HomeController'
+            controller: 'HomeController',
+            controllerAs: '$ctrl'
         });
     }

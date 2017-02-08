@@ -3,14 +3,12 @@
 
     angular
         .module('hrrc-app.components')
-        .controller('HeaderController', HeaderController);
+        .controller('FooterController', FooterController);
 
-        HeaderController.$inject = ['$mdMedia'];
+        FooterController.$inject = [];
 
-        function HeaderController($mdMedia) {
+        function FooterController() {
             var vm = {};
-
-            vm.$mdMedia = $mdMedia;
 
             function getHeaderHeight() {}
 
