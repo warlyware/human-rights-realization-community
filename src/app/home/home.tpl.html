@@ -16,7 +16,45 @@
     <div class="flex-20"></div>
 </section>
 
-<section class="layout-column layout-gt-sm-row full-width home-section-padding md-padding layout-align-center">
+
+<section class="layout-row md-padding" ng-if="$ctrl.$mdMedia('sm')">
+
+    <md-card class="flex-50">
+        <img class="md-card-image"
+        ng-src="https://static1.squarespace.com/static/588df0b01b631b0e7cf8f3a8/t/589158efa5790a492c80a298/1485920747968/tumblr_mn8b8sLRb61rkz363o1_1280.jpg?format=1000w">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">About</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>Find out more about the mission and progress of the Human Rights Realization Community.</p>
+        </md-card-content>
+        <md-card-actions class="layout-row layout-align-end-center">
+            <md-button class="color-orange">Learn More</md-button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flex-50">
+        <img class="md-card-image"
+        ng-src="https://static1.squarespace.com/static/588df0b01b631b0e7cf8f3a8/t/589158b2725e254763917463/1485920473183/?format=1000w">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Take Action</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>Ready to take the next step? We welcome your donations and contributions to the Human Rights Realization Community.</p>
+        </md-card-content>
+        <md-card-actions class="layout-row layout-align-end-center">
+            <md-button class="color-orange">Learn More</md-button>
+        </md-card-actions>
+    </md-card>
+
+</section>
+
+<section ng-if="!$ctrl.$mdMedia('sm')"
+class="layout-xs-column layout-row full-width home-section-padding md-padding layout-align-center">
 
     <md-card class="flex-gt-sm-35">
         <img class="md-card-image"
