@@ -1,2 +1,7 @@
-angular
-    .module('hrrc-app.home', []);
+(function(){
+    'use strict';
+
+    angular
+        .module('hrrc-app.home', []);
+
+})();

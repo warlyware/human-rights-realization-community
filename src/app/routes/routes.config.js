@@ -8,5 +8,11 @@ angular
             templateUrl: '/home/home.tpl.html',
             controller: 'HomeController',
             controllerAs: '$ctrl'
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: '/about/about.tpl.html',
+            controller: 'AboutController',
+            controllerAs: '$ctrl'
         });
     }
