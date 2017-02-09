@@ -4,5 +4,6 @@ angular
         'ngMaterial',
         'hrrc-app.routes',
         'hrrc-app.components',
-        'hrrc-app.home'
+        'hrrc-app.home',
+        'hrrc-app.about'
     ]);

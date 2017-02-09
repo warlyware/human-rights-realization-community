@@ -1,1 +1,21 @@
-<h1>i am about</h1>
+<section class="layout-row layout-wrap">
+    <div class="layout-row full-width about-main-image bg-position-center bg-size-cover"></div>
+    <div class="layout-column layout-gt-sm-row md-padding md-margin">
+        <div class="flex-10 hide show-gt-sm"></div>
+        <div class="flex-gt-md-30 flex-md-40 md-padding md-margin"
+        ng-class="{'text-align-center md-display-2': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
+            'md-display-3': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))
+        }">
+            Welcome to the Human Rights Realization Community.
+        </div>
+        <div class="flex-gt-md-50 flex-md-40 md-margin md-headline text-align-justify"
+        ng-class="{'layout-fill': $ctrl.$mdMedia('gt-sm')}">
+            <p>
+                The focus of the Human Rights Realization Community is to build an expansive collection of academic human rights related resources and support educational institutions in implementing human rights into their curriculum. As a group of human rights proponents, we have had the opportunity to inspire many students to become more involved in the human rights movement. We will be accept content submissions and utilize them to build the quality of human rights education our partner institutions utilize in their courses. If you have any questions or would like to make a submission, please email
+                <a href="mailto:founder.hrrc@gmail.com"
+                class="text-decoration-none">founder.hrrc@gmail.com</a>.
+            </p>
+        </div>
+        <div class="flex-10 hide show-gt-sm"></div>
+    </div>
+</section>

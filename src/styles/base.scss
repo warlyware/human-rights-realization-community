@@ -16,10 +16,18 @@
     display: block;
 }
 
-.text-align-center {
-    text-align: center;
+.bg-size-cover {
+    background-size: cover;
 }
 
-.line-height-1-5 {
-    line-height: 1.5;
+.bg-size-contain {
+    background-size: contain;
+}
+
+.bg-position-center {
+    background-position: center;
+}
+
+.min-height-80 {
+    min-height: 80%;
 }
