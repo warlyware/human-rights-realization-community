@@ -7,7 +7,7 @@ angular
     HomeController.$inject = ['$mdMedia'];
 
     function HomeController($mdMedia) {
-        var vm = {};
+        var vm = this;
 
         console.log('HomeController online');
         vm.$mdMedia = $mdMedia;

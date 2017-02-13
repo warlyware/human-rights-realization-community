@@ -14,5 +14,11 @@ angular
             templateUrl: '/about/about.tpl.html',
             controller: 'AboutController',
             controllerAs: '$ctrl'
+        })
+        .state('teaching-resources', {
+            url: '/teaching-resources',
+            templateUrl: '/teaching-resources/teaching-resources.tpl.html',
+            controller: 'TeachingResourcesController',
+            controllerAs: '$ctrl'
         });
     }

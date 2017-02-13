@@ -7,7 +7,7 @@ angular
     AboutController.$inject = ['$mdMedia'];
 
     function AboutController($mdMedia) {
-        var vm = {};
+        var vm = this;
 
         console.log('AboutController online');
         vm.$mdMedia = $mdMedia;

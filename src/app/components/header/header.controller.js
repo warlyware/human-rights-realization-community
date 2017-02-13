@@ -8,7 +8,7 @@
         HeaderController.$inject = ['$mdMedia'];
 
         function HeaderController($mdMedia) {
-            var vm = {};
+            var vm = this;
 
             vm.$mdMedia = $mdMedia;
 

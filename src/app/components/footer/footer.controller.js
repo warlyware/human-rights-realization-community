@@ -8,7 +8,7 @@
         FooterController.$inject = [];
 
         function FooterController() {
-            var vm = {};
+            var vm = this;
 
             function getHeaderHeight() {}
 
