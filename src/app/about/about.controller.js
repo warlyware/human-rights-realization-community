@@ -4,13 +4,13 @@ angular
     .module('hrrc-app.about')
     .controller('AboutController', AboutController);
 
-    AboutController.$inject = ['$mdMedia'];
+    AboutController.$inject = ['$mdMedia', 'bodyCopy'];
 
-    function AboutController($mdMedia) {
+    function AboutController($mdMedia, bodyCopy) {
         var vm = this;
 
-        console.log('AboutController online');
         vm.$mdMedia = $mdMedia;
+        vm.bodyCopy = bodyCopy.about;
 
         return vm;
     };
