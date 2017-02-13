@@ -7,5 +7,6 @@ angular
         'hrrc-app.components',
         'hrrc-app.home',
         'hrrc-app.about',
+        'hrrc-app.submissions',
         'hrrc-app.teaching-resources'
     ]);

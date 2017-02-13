@@ -2,8 +2,7 @@
     'use strict';
 
     angular
-        .module('hrrc-app.about', [
+        .module('hrrc-app.submissions', [
             'hrrc-app.body-copy'
         ]);
-
 })();

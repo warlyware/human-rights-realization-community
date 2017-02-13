@@ -8,7 +8,6 @@ angular
 
     function HomeController($mdMedia, bodyCopy) {
         var vm = this;
-        console.log(bodyCopy);
 
         vm.$mdMedia = $mdMedia;
         vm.bodyCopy = bodyCopy.home;

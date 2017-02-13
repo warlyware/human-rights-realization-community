@@ -4,11 +4,9 @@ angular
     .module('hrrc-app')
     .controller('ApplicationController', ApplicationController);
 
-    ApplicationController.$inject = ['bodyCopy'];
+    ApplicationController.$inject = [];
 
-    function ApplicationController(bodyCopy) {
-        console.log('ApplicationController online');
-        console.log(bodyCopy);
+    function ApplicationController() {
     };
 
 })();
