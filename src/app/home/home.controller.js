@@ -4,13 +4,14 @@ angular
     .module('hrrc-app.home')
     .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$mdMedia'];
+    HomeController.$inject = ['$mdMedia', 'bodyCopy'];
 
-    function HomeController($mdMedia) {
+    function HomeController($mdMedia, bodyCopy) {
         var vm = this;
+        console.log(bodyCopy);
 
-        console.log('HomeController online');
         vm.$mdMedia = $mdMedia;
+        vm.bodyCopy = bodyCopy.home;
 
         return vm;
     };
