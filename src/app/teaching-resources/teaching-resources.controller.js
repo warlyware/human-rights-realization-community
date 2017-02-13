@@ -4,13 +4,13 @@ angular
     .module('hrrc-app.teaching-resources')
     .controller('TeachingResourcesController', TeachingResourcesController);
 
-    TeachingResourcesController.$inject = ['$mdMedia'];
+    TeachingResourcesController.$inject = ['$mdMedia', 'bodyCopy'];
 
-    function TeachingResourcesController($mdMedia) {
+    function TeachingResourcesController($mdMedia, bodyCopy) {
         var vm = this;
 
-        console.log('TeachingResourcesController online');
         vm.$mdMedia = $mdMedia;
+        vm.bodyCopy = bodyCopy.teachingResources;
 
         return vm;
     };
