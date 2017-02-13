@@ -8,5 +8,6 @@ angular
         'hrrc-app.home',
         'hrrc-app.about',
         'hrrc-app.submissions',
+        'hrrc-app.contact',
         'hrrc-app.teaching-resources'
     ]);
