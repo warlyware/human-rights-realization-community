@@ -7,14 +7,13 @@
 </section>
 
 <section class="layout-row full-width home-section-padding layout-align-center-center">
-    <div class="flex-20"></div>
-    <div class="flex-60 md-headline text-align-center" ng-bind="::$ctrl.bodyCopy.missionStatement">
-    </div>
-    <div class="flex-20"></div>
+    <div class="flex-15"></div>
+    <div class="flex-70 md-subhead text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"></div>
+    <div class="flex-15"></div>
 </section>
 
 
-<section class="layout-row md-padding" ng-if="$ctrl.$mdMedia('sm')">
+<section class="layout-row md-padding home-section-padding" ng-if="$ctrl.$mdMedia('sm')">
 
     <md-card class="flex-50">
         <img class="md-card-image home-link-image"
