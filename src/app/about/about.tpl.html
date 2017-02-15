@@ -1,5 +1,6 @@
-<section class="layout-row layout-wrap">
-    <div class="layout-row full-width about-main-image bg-position-center bg-size-cover"></div>
+<div class="layout-row full-width about-main-image bg-position-center bg-size-cover"></div>
+<section class="layout-row layout-wrap"
+ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
     <div class="layout-column layout-gt-sm-row md-padding md-margin">
         <div class="flex-10 hide show-gt-sm"></div>
         <div class="flex-gt-md-30 flex-md-40 md-padding md-margin"
@@ -8,8 +9,10 @@
         }">
             Welcome to the Human Rights Realization Community.
         </div>
-        <div class="flex-gt-md-50 flex-md-40 md-margin md-headline text-align-justify"
-        ng-class="{'layout-fill': $ctrl.$mdMedia('gt-sm')}">
+        <div class="flex-gt-md-50 flex-md-40 md-margin text-align-justify"
+        ng-class="{'layout-fill': $ctrl.$mdMedia('gt-sm'),
+        'md-headline': $ctrl.$mdMedia('gt-sm'),
+        'md-subhead': !$ctrl.$mdMedia('gt-sm')}">
             <p>
                 <span ng-bind="::$ctrl.bodyCopy.main"></span>
                 <a href="mailto:founder.hrrc@gmail.com"

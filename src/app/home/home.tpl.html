@@ -1,89 +1,91 @@
-<section class="layout-row full-width home-section-padding layout-align-center-center">
-    <div class="flex-15"></div>
-    <div class="flex-70 line-height-1-5 text-align-center"
-    ng-class="{'md-display-1': !$ctrl.$mdMedia('xs'), 'md-headline': $ctrl.$mdMedia('xs')}">
-        Promoting the realization of human rights through research, education, and collaboration.
-    </div>
-    <div class="flex-15"></div>
-</section>
+<div ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
+    <section class="layout-row full-width home-section-padding layout-align-center-center">
+        <div class="flex-15"></div>
+        <div class="flex-70 line-height-1-5 text-align-center"
+        ng-class="{'md-display-1': !$ctrl.$mdMedia('xs'), 'md-headline': $ctrl.$mdMedia('xs')}">
+            Promoting the realization of human rights through research, education, and collaboration.
+        </div>
+        <div class="flex-15"></div>
+    </section>
 
-<section class="layout-row full-width home-section-padding layout-align-center-center">
-    <div class="flex-15"></div>
-    <div class="flex-70 text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"
-    ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
-    <div class="flex-15"></div>
-</section>
+    <section class="layout-row full-width home-section-padding layout-align-center-center">
+        <div class="flex-15"></div>
+        <div class="flex-70 text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"
+        ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
+        <div class="flex-15"></div>
+    </section>
 
 
-<section class="layout-row md-padding home-section-padding" ng-if="$ctrl.$mdMedia('sm')">
+    <section class="layout-row md-padding home-section-padding" ng-if="$ctrl.$mdMedia('sm')">
 
-    <md-card class="flex-50">
-        <img class="md-card-image home-link-image"
-        ng-src="http://placehold.it/350x250">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">About</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <p>Find out more about the mission and progress of the Human Rights Realization Community.</p>
-        </md-card-content>
-        <md-card-actions class="layout-row layout-align-end-center">
-            <md-button class="color-orange" ui-sref="about">Learn More</md-button>
-        </md-card-actions>
-    </md-card>
+        <md-card class="flex-50">
+            <img class="md-card-image home-link-image"
+            ng-src="http://placehold.it/350x250">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">About</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>Find out more about the mission and progress of the Human Rights Realization Community.</p>
+            </md-card-content>
+            <md-card-actions class="layout-row layout-align-end-center">
+                <md-button class="color-orange" ui-sref="about">Learn More</md-button>
+            </md-card-actions>
+        </md-card>
 
-    <md-card class="flex-50">
-        <img class="md-card-image home-link-image"
-        ng-src="http://placehold.it/350x250">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">Take Action</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <p>Ready to take the next step? We welcome your donations and contributions to the Human Rights Realization Community.</p>
-        </md-card-content>
-        <md-card-actions class="layout-row layout-align-end-center">
-            <md-button class="color-orange">Find Out How</md-button>
-        </md-card-actions>
-    </md-card>
+        <md-card class="flex-50">
+            <img class="md-card-image home-link-image"
+            ng-src="http://placehold.it/350x250">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Take Action</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>Ready to take the next step? We welcome your donations and contributions to the Human Rights Realization Community.</p>
+            </md-card-content>
+            <md-card-actions class="layout-row layout-align-end-center">
+                <md-button class="color-orange">Find Out How</md-button>
+            </md-card-actions>
+        </md-card>
 
-</section>
+    </section>
 
-<section ng-if="!$ctrl.$mdMedia('sm')"
-class="layout-xs-column layout-row full-width home-section-padding md-padding layout-align-center">
+    <section ng-if="!$ctrl.$mdMedia('sm')"
+    class="layout-xs-column layout-row full-width home-section-padding md-padding layout-align-center">
 
-    <md-card class="flex-gt-sm-35">
-        <img class="md-card-image home-link-image"
-        ng-src="http://placehold.it/350x250">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">About</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <p>Find out more about the mission and progress of the Human Rights Realization Community.</p>
-        </md-card-content>
-        <md-card-actions class="layout-row layout-align-end-center">
-            <md-button class="color-orange" ui-sref="about">Learn More</md-button>
-        </md-card-actions>
-    </md-card>
+        <md-card class="flex-gt-sm-35">
+            <img class="md-card-image home-link-image"
+            ng-src="http://placehold.it/350x250">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">About</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>Find out more about the mission and progress of the Human Rights Realization Community.</p>
+            </md-card-content>
+            <md-card-actions class="layout-row layout-align-end-center">
+                <md-button class="color-orange" ui-sref="about">Learn More</md-button>
+            </md-card-actions>
+        </md-card>
 
-    <md-card class="flex-gt-sm-35 flex-offset-gt-sm-5">
-        <img class="md-card-image home-link-image"
-        ng-src="http://placehold.it/350x250">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">Take Action</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <p>Ready to take the next step? We welcome your donations and contributions to the Human Rights Realization Community.</p>
-        </md-card-content>
-        <md-card-actions class="layout-row layout-align-end-center">
-            <md-button class="color-orange">Find Out How</md-button>
-        </md-card-actions>
-    </md-card>
+        <md-card class="flex-gt-sm-35 flex-offset-gt-sm-5">
+            <img class="md-card-image home-link-image"
+            ng-src="http://placehold.it/350x250">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Take Action</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>Ready to take the next step? We welcome your donations and contributions to the Human Rights Realization Community.</p>
+            </md-card-content>
+            <md-card-actions class="layout-row layout-align-end-center">
+                <md-button class="color-orange">Find Out How</md-button>
+            </md-card-actions>
+        </md-card>
 
-</section>
+    </section>
+</div>
