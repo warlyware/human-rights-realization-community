@@ -4,9 +4,14 @@ angular
     .module('hrrc-app')
     .controller('ApplicationController', ApplicationController);
 
-    ApplicationController.$inject = [];
+    ApplicationController.$inject = ['$mdMedia'];
 
-    function ApplicationController() {
+    function ApplicationController($mdMedia) {
+        var vm = this;
+
+        vm.$mdMedia = $mdMedia;
+
+        return vm;
     };
 
 })();

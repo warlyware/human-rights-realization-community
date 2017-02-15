@@ -11,7 +11,7 @@
 
     <body ng-controller="ApplicationController as appCtrl">
         <hrrc-header></hrrc-header>
-        <ui-view></ui-view>
+        <ui-view class="display-block" ng-class="{ 'md-padding': appCtrl.$mdMedia('xs') }"></ui-view>
         <hrrc-footer></hrrc-footer>
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-animate/angular-animate.min.js"></script>
