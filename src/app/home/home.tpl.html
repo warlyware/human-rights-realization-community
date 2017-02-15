@@ -1,6 +1,7 @@
 <section class="layout-row full-width home-section-padding layout-align-center-center">
     <div class="flex-15"></div>
-    <div class="flex-70 md-display-1 line-height-1-5 text-align-center">
+    <div class="flex-70 line-height-1-5 text-align-center"
+    ng-class="{'md-display-1': !$ctrl.$mdMedia('xs'), 'md-headline': $ctrl.$mdMedia('xs')}">
         Promoting the realization of human rights through research, education, and collaboration.
     </div>
     <div class="flex-15"></div>
@@ -8,7 +9,8 @@
 
 <section class="layout-row full-width home-section-padding layout-align-center-center">
     <div class="flex-15"></div>
-    <div class="flex-70 md-subhead text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"></div>
+    <div class="flex-70 text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"
+    ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
     <div class="flex-15"></div>
 </section>
 
