@@ -1,8 +1,13 @@
-<header class="layout-row md-padding full-width">
-    <a class="color-orange pointer-cursor text-decoration-none"
+<header class="layout-row md-padding full-width layout-align-start-center">
+    <i class="material-icons md-margin color-orange"
+    ng-class="{
+        'icon-lg': $ctrl.$mdMedia('gt-sm'),
+        'icon-md': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')
+    }">menu</i>
+    <a class="color-orange text-decoration-none"
     ui-sref="home"
     ng-class="{
-        'md-headline': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'),
         'md-display-1': $ctrl.$mdMedia('gt-sm'),
+        'md-headline': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')
     }">Human Rights Realization Community</a>
 </header>
