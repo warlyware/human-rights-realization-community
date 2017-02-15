@@ -4,8 +4,7 @@
     angular
         .module('hrrc-app.components')
         .component('hrrcHeader', {
-            templateUrl: 'components/header/header.tpl.html',
-            controller: 'HeaderController'
+            templateUrl: 'components/header/header.tpl.html'
         });
 
 })();

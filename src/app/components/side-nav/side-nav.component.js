@@ -3,8 +3,8 @@
 
     angular
         .module('hrrc-app.components')
-        .component('hrrcFooter', {
-            templateUrl: 'components/footer/footer.tpl.html'
+        .component('hrrcSideNav', {
+            templateUrl: 'components/side-nav/side-nav.tpl.html',
         });
 
 })();

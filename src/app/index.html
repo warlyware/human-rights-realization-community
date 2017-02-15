@@ -11,6 +11,7 @@
     </head>
 
     <body ng-controller="ApplicationController as appCtrl">
+        <hrrc-side-nav></hrrc-side-nav>
         <hrrc-header></hrrc-header>
         <ui-view class="display-block"></ui-view>
         <hrrc-footer></hrrc-footer>
@@ -28,9 +29,8 @@
         <script src="body-copy/body-copy.constant.js"></script>
         <script src="components/components.module.js"></script>
         <script src="components/header/header.component.js"></script>
-        <script src="components/header/header.controller.js"></script>
         <script src="components/footer/footer.component.js"></script>
-        <script src="components/footer/footer.controller.js"></script>
+        <script src="components/side-nav/side-nav.component.js"></script>
         <script src="routes/routes.module.js"></script>
         <script src="routes/routes.config.js"></script>
         <script src="home/home.module.js"></script>
