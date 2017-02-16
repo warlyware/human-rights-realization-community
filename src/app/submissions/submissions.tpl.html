@@ -1,15 +1,16 @@
-<section class="layout-column full-width home-section-padding layout-align-center-center"
+<div class="layout-row full-width submissions-main-image bg-position-center bg-size-cover"></div>
+<section class="layout-column full-width md-padding-top layout-align-center-center"
 ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
     <div class="layout-row">
         <h1 class="md-title">Human Rights Submissions</h1>
     </div>
-    <div class="layout-row md-padding">
-        <div class="flex-20"></div>
-        <div class="flex-60 md-headline text-align-center">
+    <div class="layout-row md-padding layout-align-center">
+        <div class="flex-xs-5 flex-gt-xs-20"></div>
+        <div class="flex-xs-80 flex-60 md-headline layout-column layout-align-center text-align-justify">
             <p class="md-body-2" ng-bind="::$ctrl.bodyCopy.main"></p>
             <a href="mailto:founder.hrrc@gmail.com"
-            class="text-decoration-none">founder.hrrc@gmail.com</a>
+            class="text-decoration-none md-subhead text-align-center">founder.hrrc@gmail.com</a>
         </div>
-        <div class="flex-20"></div>
+        <div class="flex-xs-5 flex-gt-xs-20"></div>
     </div>
 </section>
