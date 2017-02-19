@@ -1,19 +1,17 @@
 <div ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
-    <section class="layout-row full-width home-section-padding layout-align-center-center">
-        <div class="flex-15"></div>
-        <div class="flex-70 font-family-playfair"
+    <section class="layout-row full-width home-section-padding layout-align-center">
+        <div class="layout-column flex-xs-90 flex-gt-xs-70 font-family-playfair"
         ng-class="{'md-display-1 text-align-center': !$ctrl.$mdMedia('xs'),
         'md-headline': $ctrl.$mdMedia('xs')}">
-            Promoting the realization of human rights through research, education, and collaboration.
+            Promoting the realization of human rights through research, education, and collaboration
         </div>
-        <div class="flex-15"></div>
     </section>
 
-    <section class="layout-row full-width home-section-padding layout-align-center-center">
-        <div class="flex-15"></div>
-        <div class="flex-70 text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"
-        ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
-        <div class="flex-15"></div>
+    <section class="layout-row full-width home-section-padding layout-align-center">
+        <div class="layout-column flex-xs-90 flex-gt-xs-70">
+            <div class="text-align-justify" ng-bind="::$ctrl.bodyCopy.missionStatement"
+            ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
+        </div>
     </section>
 
 
