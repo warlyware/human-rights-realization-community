@@ -1,13 +1,18 @@
 <md-card>
     <img class="md-card-image"
-    ng-src="http://placehold.it/250x150">
+    ng-src="{{$ctrl.article.imageSrc}}">
     <md-card-title>
         <md-card-title-text>
-            <span class="md-headline font-family-playfair-sc">Article Title</span>
+            <span ng-bind="$ctrl.article.title"
+            class="md-headline font-family-playfair-sc"></span>
+            <div class="md-caption font-family-playfair-sc italic">
+                <span>Written by</span>
+                <span ng-bind="$ctrl.article.author"></span>
+            </div>
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p>A short blurb about the contents of this article</p>
+        <div class="md-body-copy" ng-bind="$ctrl.article.blurb"></div>
     </md-card-content>
     <md-card-actions class="layout-row layout-align-end-center">
         <md-button class="color-orange" ui-sref="about">Read</md-button>

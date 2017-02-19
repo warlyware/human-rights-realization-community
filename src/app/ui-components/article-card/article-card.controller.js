@@ -10,8 +10,6 @@
         function ArticleCardController() {
             var vm = this;
 
-            console.log('article card alive');
-
             return vm;
         }
 })();
