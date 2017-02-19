@@ -4,7 +4,6 @@ angular
     .module('hrrc-app')
     .run(run);
 
-    config.injector = ['$locationProvider'];
     run.$injector = ['$window', '$rootScope'];
 
     function run($window, $rootScope) {

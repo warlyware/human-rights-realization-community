@@ -3,6 +3,7 @@ angular
         'ui.router',
         'ngMaterial',
         'hrrc-app.routes',
+        'hrrc-app.utils',
         'hrrc-app.body-copy',
         'hrrc-app.ui-components',
         'hrrc-app.components',

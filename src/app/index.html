@@ -11,10 +11,11 @@
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Playfair+Display|Playfair+Display+SC" rel="stylesheet">
     </head>
 
-    <body ng-controller="ApplicationController as appCtrl">
-        <hrrc-side-nav></hrrc-side-nav>
+    <body ng-controller="ApplicationController as appCtrl" id="body">
         <hrrc-header></hrrc-header>
         <ui-view class="display-block"></ui-view>
+        <!--<hrrc-side-nav></hrrc-side-nav>-->
+        <div replace-with-template="components/side-nav/side-nav.tpl.html"></div>
         <hrrc-footer></hrrc-footer>
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-animate/angular-animate.min.js"></script>
@@ -27,6 +28,8 @@
         <script src="application.run.js"></script>
         <script src="application.controller.js"></script>
         <script src="data/data.module.js"></script>
+        <script src="utils/utils.module.js"></script>
+        <script src="utils/replace-with-template.directive.js"></script>
         <script src="data/articles.constant.js"></script>
         <script src="body-copy/body-copy.module.js"></script>
         <script src="body-copy/body-copy.constant.js"></script>
