@@ -5,11 +5,16 @@ ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
         <h1 class="md-title font-family-playfair-sc">Teaching Resources</h1>
     </div>
     <div class="layout-row layout-align-center">
-        <div class="layout-column flex-xs-80 flex-60 md-headline text-align-justify">
+        <div class="flex-xs-80 flex-70 md-headline text-align-justify md-padding">
             <p class="md-body-2" ng-bind="::$ctrl.bodyCopy.main"></p>
         </div>
     </div>
-    <div class="layout-row">
+    <div class="layout-row layout-align-center layout-wrap max-width-1000">
+        <hrrc-article-card></hrrc-article-card>
+        <hrrc-article-card></hrrc-article-card>
+        <hrrc-article-card></hrrc-article-card>
+        <hrrc-article-card></hrrc-article-card>
+        <hrrc-article-card></hrrc-article-card>
         <hrrc-article-card></hrrc-article-card>
     </div>
 </section>
