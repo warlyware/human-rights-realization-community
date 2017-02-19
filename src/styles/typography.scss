@@ -1,3 +1,21 @@
+body {
+    font-family: 'EB Garamond', serif;
+    // font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display SC', serif;
+}
+
+.font-family-garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.font-family-playfair {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.font-family-playfair-sc {
+    font-family: 'Playfair Display SC', serif !important;
+}
+
 .line-height-1-5 {
     line-height: 1.5;
 }
