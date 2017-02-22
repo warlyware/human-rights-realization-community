@@ -7,7 +7,7 @@
 
         function CreateUrlFilter() {
             return function(inputString) {
-                return inputString.replace(' ', '-').toLowerCase();
+                return inputString.replace(/\s/g, '-').toLowerCase();
             }
         }
 

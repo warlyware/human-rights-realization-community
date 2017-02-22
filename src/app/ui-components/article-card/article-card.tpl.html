@@ -15,6 +15,6 @@
         <div class="md-body-copy" ng-bind="$ctrl.article.blurb"></div>
     </md-card-content>
     <md-card-actions class="layout-row layout-align-end-center">
-        <md-button class="color-orange" ui-sref="article({{$ctrl.article.title | createUrl}})">Read</md-button>
+        <md-button class="color-orange" ui-sref="article({articleId: $ctrl.articleId})">Read</md-button>
     </md-card-actions>
 </md-card>
