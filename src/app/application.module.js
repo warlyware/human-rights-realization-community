@@ -9,6 +9,7 @@ angular
         'hrrc-app.components',
         'hrrc-app.home',
         'hrrc-app.about',
+        'hrrc-app.article',
         'hrrc-app.submissions',
         'hrrc-app.contact',
         'hrrc-app.teaching-resources'

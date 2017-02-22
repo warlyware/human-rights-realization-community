@@ -15,6 +15,12 @@ angular
             controller: 'AboutController',
             controllerAs: '$ctrl'
         })
+        .state('article', {
+            url: '/article',
+            templateUrl: '/article/article.tpl.html',
+            controller: 'ArticleController',
+            controllerAs: '$ctrl'
+        })
         .state('contact', {
             url: '/contact',
             templateUrl: '/contact/contact.tpl.html',
