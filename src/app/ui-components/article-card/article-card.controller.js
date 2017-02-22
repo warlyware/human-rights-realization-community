@@ -10,9 +10,7 @@
         function ArticleCardController($filter, ArticleService) {
             var vm = this;
 
-
-            console.log(vm.article);
-            vm.articleId = $filter('createUrl')(ArticleService.getAllArticles()[0].title);
+            vm.articleId = $filter('createUrl')(vm.article.title);
 
             return vm;
         }
