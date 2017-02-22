@@ -7,7 +7,7 @@ ngDescribe({
         describe('#getArticle', function() {
 
             it('should exist', function() {
-                expect(deps.ArticleService.getArticle).toBeDefined();
+                expect(deps.ArticleService).toBeDefined();
             });
 
         })

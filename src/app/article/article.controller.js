@@ -4,9 +4,9 @@ angular
     .module('hrrc-app.article')
     .controller('ArticleController', ArticleController);
 
-    ArticleController.$inject = [];
+    ArticleController.$inject = ['ArticleService'];
 
-    function ArticleController() {
+    function ArticleController(ArticleService) {
         var vm = this;
 
         console.log('ArticleCtrl online');
