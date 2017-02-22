@@ -5,9 +5,9 @@
         .module('hrrc-app.ui-components')
         .controller('ArticleCardController', ArticleCardController);
 
-        ArticleCardController.$inject = ['$filter', 'ArticleService'];
+        ArticleCardController.$inject = ['$filter'];
 
-        function ArticleCardController($filter, ArticleService) {
+        function ArticleCardController($filter) {
             var vm = this;
 
             vm.articleId = $filter('createUrl')(vm.article.title);
