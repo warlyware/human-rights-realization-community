@@ -5,6 +5,7 @@
   "main": "application.module.js",
   "devDependencies": {
     "angular-mocks": "1.5.5",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-sass": "^2.3.2",
@@ -13,7 +14,9 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.2",
-    "ng-describe": "^1.8.0"
+    "ng-describe": "^1.8.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
   },
   "scripts": {
     "build": "gulp",
