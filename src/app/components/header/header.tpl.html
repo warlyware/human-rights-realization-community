@@ -1,13 +1,32 @@
-<header class="layout-row md-padding full-width layout-align-start-center md-whiteframe-3dp bg-color-dark-gray">
-    <i class="material-icons md-margin icon-md color-orange cursor-pointer"
+<header class="layout-row layout-wrap md-padding-left md-margin-left full-width layout-align-start-center md-whiteframe-3dp bg-color-dark-gray">
+    <i class="hide show-xs material-icons md-margin icon-md color-orange cursor-pointer"
     ng-click="$ctrl.toggleSideNav()">menu</i>
     <a class="color-orange md-headline md-margin text-decoration-none font-family-playfair-sc"
     ui-sref="home">
+    <div class="layout-row full-width">
         <span class="hide show-xs">
             H R R C
         </span>
         <span class="hide show-gt-xs">
             Human Rights Realization Community
         </span>
+    </div>
     </a>
+    <nav class="layout-row full-width color-orange">
+        <md-button class="" ui-sref="home">
+            Home
+        </md-button>
+        <md-button ui-sref="teaching-resources">
+            Teaching Resources
+        </md-button>
+        <md-button ui-sref="submissions">
+            Submissions
+        </md-button>
+        <md-button ui-sref="about">
+            About
+        </md-button>
+        <md-button ui-sref="contact">
+            Contact
+        </md-button>
+    </nav>
 </header>
