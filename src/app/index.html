@@ -14,13 +14,14 @@
     <body ng-controller="ApplicationController as appCtrl" id="body">
         <hrrc-header></hrrc-header>
         <ui-view class="display-block"></ui-view>
-        <!--<hrrc-side-nav></hrrc-side-nav>-->
         <md-sidenav md-component-id="side-nav">
             <div ng-controller="SideNavController as $ctrl" ng-include="'components/side-nav/side-nav.tpl.html'"
             class="md-sidenav-left layout-column layout-align-center-center layout-fill
             md-headline bg-color-dark-gray color-orange md-padding font-family-playfair-sc"></div>
         </md-sidenav>
         <hrrc-footer></hrrc-footer>
+        <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+        <script src="data/firebase.init.js"></script>
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-animate/angular-animate.min.js"></script>
         <script src="node_modules/angular-aria/angular-aria.min.js"></script>
