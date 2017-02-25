@@ -10,17 +10,17 @@
         function FirebaseService($window, $firebaseObject) {
 
             return {
-                getFirebaseRef: getFirebaseRef,
-                getSyncedObject: getSyncedObject
+                getFirebaseReference: getFirebaseReference,
+                getSyncedScopeObject: getSyncedScopeObject
             }
 
-            var firebaseReference = $window.firebase.database().ref();;
 
             function getFirebaseReference() {
                 return firebaseReference;
             }
 
             function getSyncedScopeObject(scope, scopeVar) {
+                var firebaseReference = $window.firebase.database().ref();
                 var syncObject = $firebaseObject(firebaseReference);
                 return syncObject.$bindTo(scope, scopeVar);
             }
