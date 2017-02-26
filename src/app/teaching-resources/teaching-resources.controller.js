@@ -12,10 +12,7 @@ angular
         vm.$mdMedia = $mdMedia;
         vm.bodyCopy = bodyCopy.teachingResources;
 
-        // vm.articleData = ArticleService.getAllArticles();
-
-        ArticleService.syncArticles($scope).then(function() {
-            console.log($scope.articles);
+        ArticleService.syncArticlesToScope($scope).then(function() {
             vm.articles = $scope.articles;
         });
 
