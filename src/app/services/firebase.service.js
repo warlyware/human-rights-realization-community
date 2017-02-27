@@ -13,19 +13,13 @@
                 getSyncedScopeObject: getSyncedScopeObject
             }
 
-            var firebaseObjectCache;
-
-            function getAppData() {
-                return firebaseObjectData;
-            }
-
-            function getSyncedScopeObject(scope, firebaseReferenceString, childReferenceString) {
+            function getSyncedScopeObject(scope, scopeVar, firebaseReferenceString) {
                 if (scope[firebaseReferenceString]) {
                     return scope[firebaseReferenceString];
                 }
                 var firebaseReference = $window.firebase.database().ref(firebaseReferenceString);
                 var syncObject = $firebaseObject(firebaseReference);
-                return syncObject.$bindTo(scope, firebaseReferenceString);
+                return syncObject.$bindTo(scope, scopeVar);
             }
 
         }

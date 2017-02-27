@@ -17,7 +17,7 @@
             }
 
             function syncArticleToScope(scope, article) {
-                return FirebaseService.getSyncedScopeObject(scope, 'articles', article);
+                return FirebaseService.getSyncedScopeObject(scope, article, 'article');
             }
 
             function syncArticlesToScope(scope) {
