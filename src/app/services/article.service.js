@@ -12,16 +12,11 @@
             return {
                 getArticle: getArticle,
                 getAllArticles: getAllArticles,
-                syncArticleToScope: syncArticleToScope,
                 syncArticlesToScope: syncArticlesToScope
             }
 
-            function syncArticleToScope(scope, article) {
-                return FirebaseService.getSyncedScopeObject(scope, article, 'article');
-            }
-
             function syncArticlesToScope(scope) {
-                return FirebaseService.getSyncedScopeObject(scope, 'articles');
+                return FirebaseService.getSyncedScopeObject(scope, 'articles', 'articles');
             }
 
             function getArticle(articleId) {

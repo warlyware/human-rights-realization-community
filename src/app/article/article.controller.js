@@ -4,12 +4,14 @@ angular
     .module('hrrc-app.article')
     .controller('ArticleController', ArticleController);
 
-    ArticleController.$inject = ['ArticleService'];
+    ArticleController.$inject = ['$scope', '$stateParams', 'ArticleService'];
 
-    function ArticleController(ArticleService) {
+    function ArticleController($scope, $stateParams, ArticleService) {
         var vm = this;
 
-        console.log('ArticleCtrl online');
+        ArticleService.syncArticlesToScope($scope).then(function() {
+            vm.article = $scope.articles[$stateParams.articleId];
+        });
 
         return vm;
     };
