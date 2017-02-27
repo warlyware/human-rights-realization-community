@@ -4,14 +4,12 @@ angular
     .module('hrrc-app')
     .run(run);
 
-    run.$injector = ['$window', '$rootScope', 'FirebaseService'];
+    run.$injector = ['$window', '$rootScope'];
 
-    function run($window, $rootScope, FirebaseService) {
+    function run($window, $rootScope) {
         $rootScope.$on('$stateChangeSuccess', function() {
             $window.scrollTo(0, 0);
         });
-
-        FirebaseService.initAppData($rootScope);
 
     }
 
