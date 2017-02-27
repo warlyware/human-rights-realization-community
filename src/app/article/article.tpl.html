@@ -1,7 +1,10 @@
-<div class="layout-row full-width article-main-image bg-position-center bg-size-cover"></div>
-<section class="layout-row layout-wrap"
+<section class="layout-row layout-wrap layout-align-center"
 ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
 
-    <h1>{{$ctrl.article | json}}</h1>
+    <div class="flex-80">
+        <h1 ng-bind="$ctrl.article.title"></h1>
+        <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
+        <p class="md-body" ng-bind="$ctrl.article.body"></p>
+    </div>
 
 </section>
