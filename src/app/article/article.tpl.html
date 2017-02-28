@@ -3,11 +3,12 @@ ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
 
     <div class="layout-column flex-80">
         <div class="flex-row">
-            <div class="flex-60 article-image" bg-img-src="'http://placehold.it/400x300'"></div>
+            <div class="flex-60 article-image float-left md-margin-right"
+            bg-img-src="{{$ctrl.article.imageSrc}}"></div>
             <div class="layout-flex">
                 <h1 ng-bind="$ctrl.article.title"></h1>
                 <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
-                <p class="md-body" ng-bind="$ctrl.article.body"></p>
+                <p class="md-body text-align-justify" ng-bind="$ctrl.article.body"></p>
             </div>
         </div>
     </div>
