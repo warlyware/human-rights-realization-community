@@ -13,7 +13,6 @@
                 },
                 link: function(scope, iElement) {
                     iElement[0].style='background-image: url(' + scope.bgImgSrc + ');';
-                    debugger;
                 }
             };
         }
