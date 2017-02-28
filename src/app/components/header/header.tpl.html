@@ -1,10 +1,10 @@
 <header>
-    <div class="header-padding full-width layout-row layout-wrap layout-align-start-center md-whiteframe-3dp bg-color-dark-gray">
+    <div class="full-width layout-row layout-wrap layout-align-start-center md-whiteframe-3dp bg-color-dark-gray">
         <i class="hide show-xs material-icons md-margin icon-md color-orange cursor-pointer"
         ng-click="$ctrl.toggleSideNav()">menu</i>
         <a class="color-orange md-headline md-margin text-decoration-none font-family-playfair-sc"
         ui-sref="home">
-        <div class="layout-row full-width">
+        <div class="layout-row header-padding full-width">
             <span class="hide show-xs">
                 H R R C
             </span>
@@ -13,22 +13,22 @@
             </span>
         </div>
         </a>
+        <nav class="hide show-gt-xs layout-row full-width color-orange">
+            <md-button class="" ui-sref="home">
+                Home
+            </md-button>
+            <md-button ui-sref="teaching-resources">
+                Teaching Resources
+            </md-button>
+            <md-button ui-sref="submissions">
+                Submissions
+            </md-button>
+            <md-button ui-sref="about">
+                About
+            </md-button>
+            <md-button ui-sref="contact">
+                Contact
+            </md-button>
+        </nav>
     </div>
-    <nav class="hide show-gt-xs layout-row full-width color-orange">
-        <md-button class="" ui-sref="home">
-            Home
-        </md-button>
-        <md-button ui-sref="teaching-resources">
-            Teaching Resources
-        </md-button>
-        <md-button ui-sref="submissions">
-            Submissions
-        </md-button>
-        <md-button ui-sref="about">
-            About
-        </md-button>
-        <md-button ui-sref="contact">
-            Contact
-        </md-button>
-    </nav>
 </header>

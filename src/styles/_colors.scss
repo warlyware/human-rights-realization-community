@@ -7,10 +7,17 @@ $light-gray: #f6f6f6;
 $mid-gray: #CCCCCC;
 $dark-gray: #404040;
 $lightning-yellow: #F5AA30;
+$princeton-orange: #F59102;
+$astronaut-blue: #00375C;
+$blue-whale: #002D4B;
 $cloud-burst: #1D2F4E;
 
 .color-orange {
-    color: $lightning-yellow;
+    color: $princeton-orange;
+}
+
+.bg-color-dark-blue {
+    background-color: $blue-whale;
 }
 
 .bg-color-dark-gray {
@@ -20,3 +27,4 @@ $cloud-burst: #1D2F4E;
 .bg-color-light-gray {
     background-color: $light-gray;
 }
+
