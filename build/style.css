@@ -283,6 +283,10 @@ body {
 .italic {
   font-style: italic;
 }
+.contact-main-image {
+  background-image: url("https://images.unsplash.com/photo-1440557653082-e8e186733eeb?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
+  min-height: 300px;
+}
 .about-main-image {
   background-image: url("https://images.unsplash.com/photo-1434472007488-8d47f604f644?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
   min-height: 300px;
@@ -298,16 +302,12 @@ body {
 .home-section-padding {
   padding-top: 50px;
 }
-.contact-main-image {
-  background-image: url("https://images.unsplash.com/photo-1440557653082-e8e186733eeb?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
-  min-height: 300px;
-}
 .teaching-resources-main-image {
-  background-image: url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?dpr=2&auto=compress,format&fit=crop&w=1199&h=900&q=80&cs=tinysrgb&crop=");
+  background-image: url("https://images.unsplash.com/photo-1460324558840-8df3143cd908?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
   min-height: 300px;
 }
 .submissions-main-image {
-  background-image: url("http://placehold.it/1000x300");
+  background-image: url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?dpr=2&auto=compress,format&fit=crop&w=1199&h=900&q=80&cs=tinysrgb&crop=");
   min-height: 300px;
 }
 .color-orange {
