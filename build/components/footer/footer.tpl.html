@@ -1,0 +1,23 @@
+<div class="layout-column full-width layout-align-center-center md-padding margin-top">
+    <h2 class="md-headline font-family-playfair-sc">Subscribe</h2>
+    <div class="md-caption font-family-playfair">Get updates on our work.</div>
+    <ng-form class="layout-column layout-gt-xs-row full-width md-padding">
+        <div class="flex-gt-xs-5"></div>
+        <md-input-container class="flex-gt-xs-30 md-margin">
+            <label>First Name</label>
+            <input type="text" ng-model="subscribe.firstName" required>
+        </md-input-container>
+        <md-input-container class="flex-gt-xs-30 md-margin">
+            <label>Last Name</label>
+            <input type="text" ng-model="subscribe.lastName" required>
+        </md-input-container>
+        <md-input-container class="flex-gt-xs-30 md-margin">
+            <label>Email Address</label>
+            <input type="text" ng-model="subscribe.email" required>
+        </md-input-container>
+        <div class="flex-gt-xs-5"></div>
+    </ng-form>
+    <md-button class="color-orange">
+        Submit
+    </md-button>
+</div>

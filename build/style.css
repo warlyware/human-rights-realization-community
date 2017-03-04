@@ -1,0 +1,335 @@
+.color-orange {
+  color: #F59102;
+}
+
+.bg-color-dark-blue {
+  background-color: #002D4B;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.top-border-gray {
+  border-top: 1px solid #CCCCCC;
+}
+
+.color-orange {
+  color: #F59102;
+}
+
+.bg-color-dark-blue {
+  background-color: #002D4B;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.icon-md {
+  font-size: 30px !important;
+}
+
+.icon-lg {
+  font-size: 36px !important;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.margin-right-0 {
+  margin-right: 0;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.md-padding-top {
+  padding-top: 16px;
+}
+
+.md-padding-bottom {
+  padding-bottom: 16px;
+}
+
+.md-padding-left {
+  padding-left: 16px;
+}
+
+.md-padding-right {
+  padding-right: 16px;
+}
+
+.md-padding-half {
+  padding: 8px;
+}
+
+.md-padding-left-half {
+  padding-left: 8px;
+}
+
+.md-padding-right-half {
+  padding-right: 8px;
+}
+
+.md-padding-top-half {
+  padding-top: 8px;
+}
+
+.md-padding-bottom-half {
+  padding-bottom: 8px;
+}
+
+.md-margin-half {
+  margin: 8px;
+}
+
+.md-margin-left {
+  margin-left: 16px;
+}
+
+.md-margin-right {
+  margin-right: 16px;
+}
+
+.md-margin-top {
+  margin-top: 16px;
+}
+
+.md-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.md-margin-left-half {
+  margin-left: 8px;
+}
+
+.md-margin-right-half {
+  margin-right: 8px;
+}
+
+.md-margin-top-half {
+  margin-top: 8px;
+}
+
+.md-margin-bottom-half {
+  margin-bottom: 8px;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.max-width-1000 {
+  max-width: 1000px;
+}
+
+.display-block {
+  display: block;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-size-contain {
+  background-size: contain;
+}
+
+.bg-position-center {
+  background-position: center;
+}
+
+.min-height-80 {
+  min-height: 80%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.float-left {
+  float: left;
+}
+.color-orange {
+  color: #F59102;
+}
+
+.bg-color-dark-blue {
+  background-color: #002D4B;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.top-border-gray {
+  border-top: 1px solid #CCCCCC;
+}
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-family-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-family-playfair {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.font-family-playfair-sc {
+  font-family: 'Playfair Display SC', serif !important;
+}
+
+.line-height-1-5 {
+  line-height: 1.5;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.md-button {
+  font-family: 'Playfair Display SC', serif !important;
+}
+
+.italic {
+  font-style: italic;
+}
+.about-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.article-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.contact-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.home-link-image {
+  max-height: 300px;
+}
+
+.home-section-padding {
+  padding-top: 50px;
+}
+.submissions-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.teaching-resources-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.color-orange {
+  color: #F59102;
+}
+
+.bg-color-dark-blue {
+  background-color: #002D4B;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+.header-padding {
+  padding-left: 21px;
+  margin-top: -3.5px;
+}
+.side-nav-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

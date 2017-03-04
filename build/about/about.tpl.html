@@ -1,0 +1,24 @@
+<div class="layout-row full-width about-main-image bg-position-center bg-size-cover"></div>
+<section class="layout-row layout-wrap"
+ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
+    <div class="layout-column layout-gt-sm-row md-padding md-margin">
+        <div class="flex-10 hide show-gt-sm"></div>
+        <div class="flex-gt-md-30 flex-md-40 md-padding md-margin font-family-playfair-sc"
+        ng-class="{'text-align-center md-display-2': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
+            'md-display-3': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))
+        }">
+            Welcome to the Human Rights Realization Community
+        </div>
+        <div class="flex-gt-md-50 flex-md-40 md-margin text-align-justify"
+        ng-class="{'layout-fill': $ctrl.$mdMedia('gt-sm'),
+        'md-headline': $ctrl.$mdMedia('gt-sm'),
+        'md-subhead': !$ctrl.$mdMedia('gt-sm')}">
+            <p>
+                <span ng-bind="::$ctrl.bodyCopy.main"></span>
+                <a href="mailto:founder.hrrc@gmail.com"
+                class="text-decoration-none">founder.hrrc@gmail.com</a>.
+            </p>
+        </div>
+        <div class="flex-10 hide show-gt-sm"></div>
+    </div>
+</section>
