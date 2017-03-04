@@ -11,13 +11,19 @@ $princeton-orange: #F59102;
 $astronaut-blue: #00375C;
 $blue-whale: #002D4B;
 $cloud-burst: #1D2F4E;
+$ink: #193446;
+$jasmine: #E9C77B;
 
 .color-orange {
-    color: $princeton-orange;
+    color: $lightning-yellow;
+}
+
+.color-off-white {
+    color: $off-white;
 }
 
 .bg-color-dark-blue {
-    background-color: $blue-whale;
+    background-color: $cloud-burst;
 }
 
 .bg-color-dark-gray {
@@ -28,3 +34,6 @@ $cloud-burst: #1D2F4E;
     background-color: $light-gray;
 }
 
+.bg-color-beige {
+    background-color: $mid-gray;
+}
