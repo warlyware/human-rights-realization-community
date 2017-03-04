@@ -1,10 +1,8 @@
+<div class="layout-row full-width article-main-image bg-position-center bg-size-cover"></div>
 <section class="layout-row layout-wrap layout-align-center"
 ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
-
     <div class="layout-column flex-80">
         <div class="flex-row">
-            <div class="flex-60 article-image float-left md-margin-right"
-            bg-img-src="{{$ctrl.article.imageSrc}}"></div>
             <div class="layout-flex">
                 <h1 ng-bind="$ctrl.article.title"></h1>
                 <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
@@ -12,5 +10,4 @@ ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
             </div>
         </div>
     </div>
-
 </section>
