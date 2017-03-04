@@ -4,7 +4,7 @@
     angular
         .module('hrrc-app.components')
         .component('hrrcFooter', {
-            templateUrl: 'components/footer/footer.tpl.html'
+            templateUrl: '/human-rights-realization-community/build/components/footer/footer.tpl.html'
         });
 
 })();
