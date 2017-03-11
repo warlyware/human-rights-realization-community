@@ -5,7 +5,7 @@
         .module('hrrc-app.body-copy')
         .constant('bodyCopy', {
             'about': {
-                'main': 'The focus of the Human Rights Realization Community is to build an expansive collection of academic human rights related resources and support educational institutions in implementing human rights into their curriculum. As a group of human rights proponents, we have had the opportunity to inspire many students to become more involved in the human rights movement. We will be accept content submissions and utilize them to build the quality of human rights education our partner institutions utilize in their courses. If you have any questions or would like to make a submission, please email'
+                'main': 'The focus of the Human Rights Realization Community is to build an expansive collection of academic human rights related resources and support educational institutions in implementing human rights into their curriculum. As a group of human rights proponents, we have had the opportunity to inspire many students to become more involved in the human rights movement. We will be accept content submissions and utilize them to build the quality of human rights education our partner institutions utilize in their courses. If you have any questions or would like to make a submission, please email',
             },
             'home': {
                 'missionStatement': 'At HRRC, we envision a world where human rights are the cornerstone of a student’s education.'

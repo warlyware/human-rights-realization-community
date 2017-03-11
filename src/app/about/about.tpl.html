@@ -1,24 +1,39 @@
-<div class="layout-row full-width about-main-image bg-position-center bg-size-cover"></div>
-<section class="layout-row layout-wrap"
+<section class="layout-row layout-wrap layout-align-center"
 ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
-    <div class="layout-column layout-gt-sm-row md-padding md-margin">
-        <div class="flex-10 hide show-gt-sm"></div>
-        <div class="flex-gt-md-30 flex-md-40 md-padding md-margin font-family-playfair-sc"
-        ng-class="{'text-align-center md-display-2': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
-            'md-display-3': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))
-        }">
-            Welcome to the Human Rights Realization Community
-        </div>
-        <div class="flex-gt-md-50 flex-md-40 md-margin text-align-justify"
-        ng-class="{'layout-fill': $ctrl.$mdMedia('gt-sm'),
-        'md-headline': $ctrl.$mdMedia('gt-sm'),
-        'md-subhead': !$ctrl.$mdMedia('gt-sm')}">
-            <p>
-                <span ng-bind="::$ctrl.bodyCopy.main"></span>
-                <a href="mailto:founder.hrrc@gmail.com"
-                class="text-decoration-none">founder.hrrc@gmail.com</a>.
-            </p>
-        </div>
-        <div class="flex-10 hide show-gt-sm"></div>
+    <div class="about-main-image flex-100 bg-position-center bg-size-cover"></div>
+    <div class="md-padding md-margin flex-100 font-family-playfair-sc"
+    ng-class="{'text-align-center md-display-2': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
+        'md-display-3': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))
+    }">
+        Welcome to the Human Rights Realization Community
+    </div>
+    <div class="md-margin text-align-justify"
+    ng-class="{'md-headline': $ctrl.$mdMedia('gt-sm'),
+    'md-subhead': !$ctrl.$mdMedia('gt-sm')}">
+        <p>
+            <span ng-bind="::$ctrl.bodyCopy.main"></span>
+        </p>
+        <h2 class="font-family-playfair-sc md-padding-top">
+            Vision
+        </h2>
+        <p>
+            At HRRC, we envision a world where human rights are the cornerstone of a student’s education.
+        </p>
+        <p>
+            As such, the HRRC is about empowering instructors from all fields and disciplines to incorporate human
+            rights into their academic programs.
+        </p>
+        <h2 class="font-family-playfair-sc md-padding-top">
+            Mission
+        </h2>
+        <p>
+            HRRC accomplishes its goals by drafting and disseminating human rights lesson plans and supplementary
+            materials that both graduate and undergraduate university instructors can weave into lectures on a wide
+            range of subjects, including social studies, world history, politics, international relations,
+            sociology, courses on business management, and even mathematics.
+        </p>
+        <p>
+            HRRC also publishes materials dedicated to the most recent trends in human rights and gives students and instructors alike a platform for discourse and study by submitting and utilizing human rights related articles and papers.
+        </p>
     </div>
 </section>
