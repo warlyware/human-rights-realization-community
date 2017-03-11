@@ -12,14 +12,14 @@
     </head>
 
     <body ng-controller="ApplicationController as appCtrl" id="body">
-        <hrrc-header></hrrc-header>
+        <hrrc-header class="layout-row"></hrrc-header>
         <ui-view class="layout-row bg-color-off-white"></ui-view>
         <md-sidenav md-component-id="side-nav">
             <div ng-controller="SideNavController as $ctrl" ng-include="'components/side-nav/side-nav.tpl.html'"
             class="md-sidenav-left layout-column layout-align-center-center layout-fill
             md-headline bg-color-dark-blue color-orange md-padding font-family-playfair-sc"></div>
         </md-sidenav>
-        <hrrc-footer></hrrc-footer>
+        <hrrc-footer class="layout-row"></hrrc-footer>
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
         <script src="data/firebase.init.js"></script>
