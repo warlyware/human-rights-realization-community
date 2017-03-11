@@ -1,9 +1,10 @@
+@import 'reset';
+
 @import 'borders';
 @import 'colors';
 @import 'icon-sizes';
 @import 'padding-margin';
 @import 'position';
-@import 'reset';
 
 .full-height {
     height: 100%;
@@ -43,4 +44,8 @@
 
 .float-left {
     float: left;
+}
+
+.line-height-3 {
+    line-height: 3rem;
 }
