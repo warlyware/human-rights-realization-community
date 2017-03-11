@@ -1,9 +1,12 @@
-<div ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
-    <section class="layout-row full-width home-section-padding layout-align-center">
-        <div class="layout-column flex-xs-90 flex-gt-xs-70 font-family-playfair"
+<div>
+    <section class="layout-row full-width layout-align-center-center
+    bg-position-center bg-size-cover"
+    ng-class="{'home-hero': !$ctrl.$mdMedia('xs'),
+    'home-hero-xs': $ctrl.$mdMedia('xs')}">
+        <div class="layout-column flex-xs-90 flex-gt-xs-70 font-family-playfair color-off-white"
         ng-class="{'md-display-1 text-align-center': !$ctrl.$mdMedia('xs'),
         'md-headline': $ctrl.$mdMedia('xs')}">
-            We believe that human rights should be the cornerstone of a student’s education.
+            Promoting the realization of human rights through research, education, and collaboration.
         </div>
     </section>
 
@@ -13,7 +16,6 @@
             ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></div>
         </div>
     </section>
-
 
     <section class="layout-row md-padding home-section-padding" ng-if="$ctrl.$mdMedia('sm')">
 
