@@ -17,6 +17,11 @@
             ],
             "styles_imports": "./src/styles"
         },
+        "images": [
+            "./src/img/*.jpg",
+            "./src/img/*.gif",
+            "./src/img/*.png"
+        ],
         "node_modules": [
             "./node_modules/**/*.js",
             "./node_modules/**/*.css"
