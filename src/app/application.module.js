@@ -16,5 +16,6 @@ angular
         'hrrc-app.article',
         'hrrc-app.submissions',
         'hrrc-app.contact',
-        'hrrc-app.teaching-resources'
+        'hrrc-app.teaching-resources',
+        'hrrc-app.papers'
     ]);
