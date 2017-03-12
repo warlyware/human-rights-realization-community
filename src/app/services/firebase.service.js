@@ -10,7 +10,14 @@
         function FirebaseService($window, $firebaseObject) {
 
             return {
+                getBaseUrl: getBaseUrl,
                 getSyncedScopeObject: getSyncedScopeObject
+            }
+
+            var baseUrl = 'gs://hrrc-32aeb.appspot.com/';
+
+            function getBaseUrl() {
+                return baseUrl;
             }
 
             function getSyncedScopeObject(scope, scopeVar, firebaseReferenceString) {
