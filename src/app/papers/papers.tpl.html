@@ -1,0 +1,15 @@
+<div class="layout-row full-width papers-main-image bg-position-center bg-size-cover"></div>
+<section class="layout-column full-width md-padding-top layout-align-center-center"
+ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
+    <div class="layout-row">
+        <h1 class="md-title font-family-playfair-sc">Papers</h1>
+    </div>
+    <div class="layout-row layout-align-center">
+        <div class="flex-xs-80 flex-70 md-headline text-align-justify md-padding">
+            <p class="md-body-2" ng-bind="::$ctrl.bodyCopy.main"></p>
+        </div>
+    </div>
+    <div class="layout-row layout-align-center layout-wrap max-width-1000">
+        <hrrc-article-card class="flex-gt-xs-30" ng-repeat="article in $ctrl.articles" article="article"></hrrc-article-card>
+    </div>
+</section>
