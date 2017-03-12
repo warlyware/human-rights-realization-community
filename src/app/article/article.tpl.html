@@ -1,7 +1,6 @@
 <div class="layout-row full-width article-main-image bg-position-center bg-size-cover"></div>
-<section class="layout-row layout-wrap layout-align-center max-width-1000"
-ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
-    <div class="layout-column">
+<section class="md-padding md-margin layout-row layout-wrap layout-align-center">
+    <div class="layout-row max-width-1000">
         <h1 ng-bind="$ctrl.article.title"></h1>
         <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
         <div ng-show="$ctrl.article.body" markdown-to-html="$ctrl.article.body"></div>
