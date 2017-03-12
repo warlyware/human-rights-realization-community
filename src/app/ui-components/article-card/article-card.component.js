@@ -7,7 +7,7 @@
             templateUrl: 'ui-components/article-card/article-card.tpl.html',
             controller: 'ArticleCardController',
             bindings: {
-                article: '<'
+                article: '='
             }
         });
 

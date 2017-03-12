@@ -21,11 +21,14 @@
 
             function getArticleByRef(markdownRef) {
                 var dataStore = FirebaseService.getDataStore();
-                return dataStore.child(markdownRef).getDownloadURL().then(function(url) {
+                return dataStore.child(markdownRef + '.md').getDownloadURL().then(function(url) {
                     console.log(url);
-                    return $http.get(url, function(data) {
-                        return data;
+                    return $http.get(url).then(function(response) {
+                        return response.data;
+                    }).catch(function(err) {
+                        console.error(err);
                     });
+
                 });
             }
 

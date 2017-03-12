@@ -16,10 +16,6 @@ angular
             vm.articles = $scope.articles;
         });
 
-        ArticleService.getArticleByRef('article1.md').then(function(article) {
-            console.log(article);
-        });
-
         return vm;
     };
 

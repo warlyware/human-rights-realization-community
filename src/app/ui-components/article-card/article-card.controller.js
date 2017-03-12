@@ -5,12 +5,14 @@
         .module('hrrc-app.ui-components')
         .controller('ArticleCardController', ArticleCardController);
 
-        ArticleCardController.$inject = ['$filter'];
+        ArticleCardController.$inject = ['$state'];
 
-        function ArticleCardController($filter) {
+        function ArticleCardController($state) {
             var vm = this;
 
-            vm.articleId = $filter('createUrl')(vm.article.title);
+            vm.goToArticle = function() {
+                $state.go('article', {mdRef: vm.article.mdRef});
+            }
 
             return vm;
         }

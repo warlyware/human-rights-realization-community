@@ -4,13 +4,15 @@ angular
     .module('hrrc-app.article')
     .controller('ArticleController', ArticleController);
 
-    ArticleController.$inject = ['$scope', '$stateParams', 'ArticleService'];
+    ArticleController.$inject = ['$scope', '$timeout', '$stateParams', 'ArticleService'];
 
-    function ArticleController($scope, $stateParams, ArticleService) {
+    function ArticleController($scope, $timeout, $stateParams, ArticleService) {
         var vm = this;
+        vm.article = {};
 
-        ArticleService.syncArticlesToScope($scope).then(function() {
-            vm.article = $scope.articles[$stateParams.articleId];
+        ArticleService.getArticleByRef($stateParams.mdRef).then(function(data) {
+            vm.article.body = data;
+            $scope.$apply();
         });
 
         return vm;
