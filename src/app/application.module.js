@@ -2,6 +2,8 @@ angular
     .module('hrrc-app', [
         'ui.router',
         'ngMaterial',
+        'ngSanitize',
+        'ng-showdown',
         'firebase',
         'hrrc-app.routes',
         'hrrc-app.utils',
