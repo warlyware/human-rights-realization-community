@@ -6,11 +6,11 @@
         .module('hrrc-app.services')
         .factory('ArticleService', ArticleService);
 
-        ArticleService.$inject = ['articles', 'FirebaseService'];
+        ArticleService.$inject = ['$http', 'articles', 'FirebaseService'];
 
-        function ArticleService(articles, FirebaseService) {
+        function ArticleService($http, articles, FirebaseService) {
             return {
-                getArticle: getArticle,
+                getArticleByRef: getArticleByRef,
                 getAllArticles: getAllArticles,
                 syncArticlesToScope: syncArticlesToScope
             }
@@ -19,9 +19,13 @@
                 return FirebaseService.getSyncedScopeObject(scope, 'articles', 'articles');
             }
 
-            function getArticle(articleId) {
-                angular.forEach(articles, function(val, key) {
-                    console.log(val, key);
+            function getArticleByRef(markdownRef) {
+                var dataStore = FirebaseService.getDataStore();
+                return dataStore.child(markdownRef).getDownloadURL().then(function(url) {
+                    console.log(url);
+                    return $http.get(url, function(data) {
+                        return data;
+                    });
                 });
             }
 
