@@ -38,5 +38,11 @@ angular
             templateUrl: '/teaching-resources/teaching-resources.tpl.html',
             controller: 'TeachingResourcesController',
             controllerAs: '$ctrl'
+        })
+        .state('papers', {
+            url: '/papers',
+            templateUrl: '/papers/papers.tpl.html',
+            controller: 'PapersController',
+            controllerAs: '$ctrl'
         });
     }
