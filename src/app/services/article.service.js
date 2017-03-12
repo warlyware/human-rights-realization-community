@@ -22,7 +22,9 @@
             function getArticleById(markdownRef) {
                 var dataStore = FirebaseService.getDataStore();
                 return dataStore.child(markdownRef + '.md').getDownloadURL().then(function(url) {
-                    return $http.get(url).then(function(response) {
+                    return $http.get(url, {
+                        cache: true
+                    }).then(function(response) {
                         return response.data;
                     }).catch(function(err) {
                         console.error(err);

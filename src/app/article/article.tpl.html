@@ -1,8 +1,8 @@
-<div class="layout-row full-width article-main-image bg-position-center bg-size-cover"></div>
 <section class="md-padding md-margin layout-row layout-wrap layout-align-center">
     <div class="layout-row max-width-1000">
         <h1 ng-bind="$ctrl.article.title"></h1>
         <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
+        <md-progress-circular ng-show="!$ctrl.article.body"></md-progress-circular>
         <div ng-show="$ctrl.article.body" markdown-to-html="$ctrl.article.body"></div>
     </div>
 </section>
