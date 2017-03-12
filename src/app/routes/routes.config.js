@@ -16,7 +16,7 @@ angular
             controllerAs: '$ctrl'
         })
         .state('article', {
-            url: '/article/:mdRef',
+            url: '/article/:articleId',
             templateUrl: '/article/article.tpl.html',
             controller: 'ArticleController',
             controllerAs: '$ctrl'

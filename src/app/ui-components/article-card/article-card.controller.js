@@ -10,10 +10,6 @@
         function ArticleCardController($state) {
             var vm = this;
 
-            vm.goToArticle = function() {
-                $state.go('article', {mdRef: vm.article.mdRef});
-            }
-
             return vm;
         }
 })();

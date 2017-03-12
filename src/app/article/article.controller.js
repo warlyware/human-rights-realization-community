@@ -10,7 +10,7 @@ angular
         var vm = this;
         vm.article = {};
 
-        ArticleService.getArticleByRef($stateParams.mdRef).then(function(data) {
+        ArticleService.getArticleById($stateParams.articleId).then(function(data) {
             vm.article.body = data;
             $scope.$apply();
         });
