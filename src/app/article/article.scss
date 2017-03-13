@@ -1,0 +1,11 @@
+#articleBody > div {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    flex: 1;
+    display: flex;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+    min-width: 0;
+}
