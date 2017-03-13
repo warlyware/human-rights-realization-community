@@ -1,7 +1,5 @@
 <section class="md-padding md-margin layout-row layout-wrap layout-align-center">
     <div class="layout-column max-width-1000">
-        <h1 ng-bind="$ctrl.article.title"></h1>
-        <h2 class="md-subhead" ng-bind="$ctrl.article.author"></h2>
         <md-progress-circular ng-show="!$ctrl.article.body"></md-progress-circular>
         <div ng-if="$ctrl.userIsAdmin()" class="layout-row full-width">
             <i class="material-icons icon-md color-orange cursor-pointer"
