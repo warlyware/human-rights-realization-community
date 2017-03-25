@@ -8,10 +8,20 @@
 
 .home-hero {
     background-image: url('../../img/home-hero.jpg');
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .home-hero-xs {
     background-image: url('../../img/home-hero.jpg');
     min-height: 200px;
+}
+
+.home-section-1 {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-book-grass {
+    background-image: url('../../img/book-grass.jpg');
 }

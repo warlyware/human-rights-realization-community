@@ -13,6 +13,7 @@ $blue-whale: #002D4B;
 $cloud-burst: #1D2F4E;
 $ink: #193446;
 $jasmine: #E9C77B;
+$dark-fern: #164000;
 
 .color-orange {
     color: $lightning-yellow;
@@ -40,4 +41,8 @@ $jasmine: #E9C77B;
 
 .bg-color-beige {
     background-color: $mid-gray;
+}
+
+.bg-color-dark-green {
+    background-color: $dark-fern;
 }
