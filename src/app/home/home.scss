@@ -1,3 +1,5 @@
+@import 'arrow-cut-out-side';
+
 .home-link-image {
     max-height: 300px;
 }
@@ -22,6 +24,16 @@
     position: relative;
 }
 
-.image-book-grass {
-    background-image: url('../../img/book-grass.jpg');
+.home-section-1:before {
+    content: " ";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(left center, ellipse cover, RGBA(22, 64, 0, 0.2) 0%,rgba(0,0,0,0.8) 100%), url('../../img/book-grass.jpg') center/cover no-repeat;
+}
+
+.z-index-1 {
+    z-index: 1;
 }
