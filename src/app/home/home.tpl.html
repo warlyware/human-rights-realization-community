@@ -11,8 +11,7 @@
         </div>
     </section>
 
-    <section class="layout-row full-width bg-color-dark-green bg-position-center bg-size-cover
-    image-book-grass"
+    <section class="layout-row full-width bg-color-dark-green bg-position-center bg-size-cover"
     ng-class="{'home-section-1': $ctrl.$mdMedia('gt-sm'),
     'home-section-1-sm': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')}">
         <div class="layout-max-width margin-0-auto z-index-1 layout-row ">
@@ -23,4 +22,20 @@
             </div>
         </div>
     </section>
+
+    <section class="layout-row full-width bg-color-dark-gray bg-position-center bg-size-cover"
+    ng-class="{'home-section-2': $ctrl.$mdMedia('gt-sm'),
+    'home-section-2-sm': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')}">
+        <div class="layout-max-width margin-0-auto z-index-1 layout-row ">
+            <div class="flex-gt-sm-50 flex-offset-xs-10 flex-offset-sm-10 flex-80
+            layout-column layout-align-center-center">
+                <p class="text-align-justify color-off-white"
+                ng-class="{'md-display-1': !$ctrl.$mdMedia('xs'), 'md-title': $ctrl.$mdMedia('xs')}">
+                    HRRC accomplishes its goals by drafting and disseminating human rights lesson plans and supplementary
+                    materials for university instructors.
+                </p>
+            </div>
+        </div>
+    </section>
+
 </div>
