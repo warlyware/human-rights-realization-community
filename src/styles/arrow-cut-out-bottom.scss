@@ -1,9 +1,11 @@
+@import 'colors';
+
 .arrow {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #3D2D48;
 }
 .arrow:before,
 .arrow:after {
@@ -15,11 +17,11 @@
 }
 .arrow:before {
     right: 50%;
-    border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 20px solid #3D2D48;
     border-right: 20px solid transparent;
 }
 .arrow:after {
     left: 50%;
-    border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 20px solid #3D2D48;
     border-left: 20px solid transparent;
 }
