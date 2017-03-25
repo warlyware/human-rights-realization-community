@@ -3,7 +3,8 @@
     bg-position-center bg-size-cover position-relative"
     ng-class="{'home-hero': !$ctrl.$mdMedia('xs'),
     'home-hero-xs': $ctrl.$mdMedia('xs')}">
-        <div class="layout-column flex-xs-90 flex-gt-xs-70 font-family-playfair line-height-4 color-off-white"
+        <div class="layout-column layout-max-width margin-0-auto
+        flex-80 flex-offset-10 flex-gt-sm-70 font-family-playfair line-height-4 color-off-white"
         ng-class="{'md-display-2 text-align-center': !$ctrl.$mdMedia('xs'),
         'md-headline': $ctrl.$mdMedia('xs')}">
             Promoting the realization of human rights through research, education, and collaboration.
@@ -11,10 +12,12 @@
     </section>
 
     <section class="layout-row full-width bg-color-dark-green bg-position-center bg-size-cover
-    image-book-grass home-section-1 home-section-1">
-        <div class="max-width-100 margin-0-auto z-index-1 layout-row ">
-            <div class="full-height flex-50"></div>
-            <div class="flex-45 layout-column layout-align-center-center">
+    image-book-grass"
+    ng-class="{'home-section-1': $ctrl.$mdMedia('gt-sm'),
+    'home-section-1-sm': $ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')}">
+        <div class="layout-max-width margin-0-auto z-index-1 layout-row ">
+            <div class="flex-gt-sm-50 flex-offset-gt-sm-50 flex-80 flex-offset-10
+            layout-column layout-align-center-center">
                 <p class="text-align-justify color-off-white" ng-bind="::$ctrl.bodyCopy.missionStatement"
                 ng-class="{'md-display-1': !$ctrl.$mdMedia('xs'), 'md-title': $ctrl.$mdMedia('xs')}"></p>
             </div>
