@@ -6,34 +6,15 @@
         .module('hrrc-app.services')
         .factory('ArticleService', ArticleService);
 
-        ArticleService.$inject = ['$http', 'articles', 'FirebaseService'];
+        ArticleService.$inject = ['$http', 'ApiService'];
 
-        function ArticleService($http, articles, FirebaseService) {
+        function ArticleService($http, ApiService) {
             return {
-                getArticleById: getArticleById,
-                getAllArticles: getAllArticles,
-                syncArticlesToScope: syncArticlesToScope
+                getArticles: getArticles,
             }
 
-            function syncArticlesToScope(scope) {
-                return FirebaseService.getSyncedScopeObject(scope, 'articles', 'articles');
-            }
-
-            function getArticleById(markdownRef) {
-                var dataStore = FirebaseService.getDataStore();
-                return dataStore.child(markdownRef + '.md').getDownloadURL().then(function(url) {
-                    return $http.get(url, {
-                        cache: true
-                    }).then(function(response) {
-                        return response.data;
-                    }).catch(function(err) {
-                        console.error(err);
-                    });
-                });
-            }
-
-            function getAllArticles() {
-                return articles;
+            function getArticles() {
+                return ApiService.getPosts();
             }
         }
 
