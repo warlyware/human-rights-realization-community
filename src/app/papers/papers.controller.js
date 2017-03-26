@@ -4,22 +4,16 @@ angular
     .module('hrrc-app.papers')
     .controller('PapersController', PapersController);
 
-    PapersController.$inject = ['$mdMedia', '$scope', 'bodyCopy', 'ApiService', 'ArticleService'];
+    PapersController.$inject = ['$mdMedia', '$scope', 'bodyCopy', 'ArticleService'];
 
-    function PapersController($mdMedia, $scope, bodyCopy, ApiService, ArticleService) {
+    function PapersController($mdMedia, $scope, bodyCopy, ArticleService) {
         var vm = this;
 
         vm.$mdMedia = $mdMedia;
         vm.bodyCopy = bodyCopy.teachingResources;
-        var data;
 
-        ApiService.getPosts().then(function(data) {
-            data = data;
-            console.log(data);
-        });
-
-        ArticleService.syncArticlesToScope($scope).then(function() {
-            vm.articles = $scope.articles;
+        ArticleService.getArticles().then(function(articles) {
+            vm.articles = articles;
         });
 
         return vm;

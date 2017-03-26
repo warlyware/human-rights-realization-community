@@ -14,9 +14,8 @@
 
             function getPosts() {
                 var apiBaseUrl = 'http://0.0.0.0:3000/api'
-                return $http.get(apiBaseUrl + '/post/list').then(function(data) {
-                    console.log(data);
-                    return data;
+                return $http.get(apiBaseUrl + '/post/list').then(function(res) {
+                    return res.data;
                 });
             }
         }
