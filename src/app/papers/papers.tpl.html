@@ -9,7 +9,7 @@ ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
             <p class="md-body-2" ng-bind="::$ctrl.bodyCopy.main"></p>
         </div>
     </div>
-    <div class="layout-row layout-align-center layout-wrap layout-max-width">
+    <div class="layout-row layout-wrap layout-xs-column  layout-max-width">
         <hrrc-article-card class="flex-gt-xs-50" ng-repeat="article in $ctrl.articles" article="article"></hrrc-article-card>
     </div>
 </section>
