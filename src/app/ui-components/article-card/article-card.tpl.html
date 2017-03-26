@@ -1,6 +1,6 @@
-<md-card>
-    <img class="md-card-image"
-    ng-src="{{$ctrl.article.image.url}}">
+<md-card class="article-card-width">
+    <div class="md-card-image article-card-image bg-size-cover bg-position-center bg-no-repeat"
+    ng-style="{'background-image':'url('+$ctrl.article.image.url+')'}"></div>
     <md-card-title class="padding-bottom-0">
         <md-card-title-text>
             <span ng-bind="$ctrl.article.title"
