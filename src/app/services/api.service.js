@@ -5,15 +5,19 @@
         .module('hrrc-app.services')
         .factory('ApiService', ApiService);
 
-        ApiService.$inject = [];
+        ApiService.$inject = ['$http'];
 
-        function ApiService() {
+        function ApiService($http) {
             return {
-                serviceTest: serviceTest
+                getPosts: getPosts
             }
 
-            function serviceTest() {
-                console.log('alive');
+            function getPosts() {
+                var apiBaseUrl = 'http://0.0.0.0:3000/api'
+                return $http.get(apiBaseUrl + '/post/list').then(function(data) {
+                    console.log(data);
+                    return data;
+                });
             }
         }
 })();
