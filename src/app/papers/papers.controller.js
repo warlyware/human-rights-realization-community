@@ -14,6 +14,8 @@ angular
 
         ArticleService.getArticles().then(function(articles) {
             vm.articles = articles;
+        }).catch(function(err) {
+            console.log(err);
         });
 
         return vm;
